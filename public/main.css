@@ -1,0 +1,61 @@
+body {
+  background-image: url(./notes_background.jpg);
+  font-family: "Times New Roman", Times, serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.peep {
+  text-decoration: none;
+  background-color: grey;
+  color: black;
+  padding: 2px 6px 2px 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width:250px;
+  max-width:250px;
+  height: 150px;
+  max-height: 150px;
+  display: inline-block;
+}
+
+.signupform {
+  text-decoration: none;
+  background-color: grey;
+  color: black;
+  padding: 2px 6px 2px 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width:250px;
+  max-width:250px;
+  display: inline-block;
+}
