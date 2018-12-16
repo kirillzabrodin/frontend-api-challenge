@@ -12,6 +12,14 @@ var Render = (function() {
     SignUpPage: function() {
       NavBar();
       SignUpForm();
+    },
+    LogInPage: function() {
+      NavBar();
+      LogInForm();
+    },
+    NewPeepPage: function() {
+      NavBar();
+      NewPeepForm();
     }
   }
 

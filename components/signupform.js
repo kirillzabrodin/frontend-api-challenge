@@ -37,6 +37,12 @@ var SignUpUser = function(handle, password) {
   var url = "https://chitter-backend-api.herokuapp.com/users"
   xhttp.open('POST', url, true)
   xhttp.setRequestHeader("Content-Type", "application/json");
+  xhttp.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 201) {
+      user = JSON.parse(this.response);
+      alert(user.handle + "'s account created!'")
+    }
+  }
   let content = {'user': {'handle': handle, 'password': password}};
   xhttp.send(JSON.stringify(content));
 }

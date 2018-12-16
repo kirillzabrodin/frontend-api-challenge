@@ -42,12 +42,39 @@ li a:hover {
   margin: 10px;
   width:250px;
   max-width:250px;
-  height: 150px;
-  max-height: 150px;
+  height: 300px;
+  max-height: 300px;
   display: inline-block;
 }
 
 .signupform {
+  text-decoration: none;
+  background-color: grey;
+  color: black;
+  padding: 2px 6px 2px 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width:250px;
+  max-width:250px;
+  display: inline-block;
+}
+
+.loginform {
+  text-decoration: none;
+  background-color: grey;
+  color: black;
+  padding: 2px 6px 2px 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width:250px;
+  max-width:250px;
+  display: inline-block;
+}
+
+
+.peepform {
   text-decoration: none;
   background-color: grey;
   color: black;

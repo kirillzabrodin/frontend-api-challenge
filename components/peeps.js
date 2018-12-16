@@ -13,6 +13,12 @@ var Peeps = function() {
 
 var PeepsRender = function(peeps) {
   peeps.forEach(function(peep) {
-    document.getElementById('body').innerHTML += "<a class='peep' href='#" + peep.id + "'><h3 class='author'>" + peep.user.handle + "</h3>" + peep.body + "</a><br>"
+    document.getElementById('body').innerHTML += "<a class='peep' href='#" + peep.id + "'>" +
+    "<h2 class='author'>" + peep.user.handle + "</h2><br>" +
+    "<h3 class='created'>" + peep.created_at + "</h3><br>" +
+    "<p>" + peep.body + "</p>" +
+     "<p>Likes:" + peep.likes.length + "</p>" +
+     "</a>" +
+     "<br>"
   })
 }
