@@ -42,6 +42,7 @@ var LogInUser = function(handle, password) {
       var info = JSON.parse(this.response);
       window.sessionStorage.setItem("session_id", info.user_id);
       window.sessionStorage.setItem("session_key", info.session_key);
+      window.location.href= window.location.href.split('#')[0].concat('#home')
       alert("You're logged in!")
     }
   }

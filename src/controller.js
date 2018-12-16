@@ -28,10 +28,10 @@ var Controller = (function() {
       document.getElementById('body').innerHTML = "";
       if (window.location.href.includes('#home')) {
         LoadPeepsPage()
-      } else if (window.location.href.includes('#signup')) {
-        LoadSignUpPage()
       } else if (window.location.href.includes('#login')) {
         LoadLogInPage()
+      } else if (window.location.href.includes('#signup')) {
+        LoadSignUpPage()
       } else if (window.location.href.includes('#newpeep')) {
         LoadNewPeepPage()
       } else {

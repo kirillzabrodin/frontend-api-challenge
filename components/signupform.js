@@ -40,6 +40,7 @@ var SignUpUser = function(handle, password) {
   xhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 201) {
       user = JSON.parse(this.response);
+      window.location.href= window.location.href.split('#')[0].concat('#home')
       alert(user.handle + "'s account created!'")
     }
   }
